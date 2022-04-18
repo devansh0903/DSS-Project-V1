@@ -1,0 +1,39 @@
+<br/>
+<br/>
+
+<div class="col-md-8">
+    <h2>Movie List</h2>
+    <br/>
+    <br/>
+    <button class = 'btn btn-primary' (click)= "addMov()" >Add Movie</button>
+    <div class="table-responsive table-container table-striped">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Movie Name</th>
+            <th>Movie Description</th>
+            <th>Duration</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mov of movie">
+            <td class="hidden">{{ mov.id }}</td>
+            <td><a [routerLink] = "['movie/',mov.id]">{{mov.title}}</a></td>
+            <td>{{ mov.movieDesc }}</td>
+            <td>{{ mov.duration }}</td>
+            <td> {{ mov. rating}}</td>
+            <td><button class = "btn btn-primary" (click) = "editMov()"> Edit </button></td>
+            <td><button class = "btn btn-danger"> Delete </button></td>
+
+         </tr>
+         </tbody>
+         </table>
+         </div>
+         </div>
+         
+
+         
+
+     
