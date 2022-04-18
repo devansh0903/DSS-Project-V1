@@ -1,6 +1,6 @@
 export interface Movie{
     id? : number;
-    title?: string;
+    title: string;
     movieDesc?: string;
     releaseYear?: number;
     duration?: string;
@@ -19,7 +19,7 @@ export const movies = [
         releaseYear: 2008,
         duration: "75 minutes",
         rating: 5,
-        reviews: ["Good", "Bad", "Awesome", "Goodluck", "Bravo"],
+        reviews: ["Good", "Bad"],
         actors : ["Hugh", "David"]
 
 

@@ -1,0 +1,53 @@
+<div class = "container-sm">
+    <h2 style = "text-align: center;">Update Movie Form</h2>
+    
+    <form [formGroup]="updateMovieForm">
+        <div class = 'form-group'>
+            <label for="title">
+              Movie ID
+            </label>
+            <input id="id" class = 'form-control' type="text" formControlName="movieId" placeholder = " Movie Id">
+          </div> <br/><br/>
+        <div class = 'form-group'>
+            <label for="title">
+              Movie Title
+            </label>
+            <input id="title" class = 'form-control' type="text" formControlName="movieTitle" placeholder = "Name of the Movie">
+          </div> <br/><br/>
+          <div class = 'form-group'>
+            <label for="movieDesc">
+              Movie Description
+            </label>
+            <input id="movieDesc" class = 'form-control' type="text" formControlName="movieDesc"placeholder = "Details about the movie...">
+          </div> <br/><br/>
+          <div class = 'form-group'>
+            <label for="releaseYear">
+              Release Year
+            </label>
+            <input id="releaseYear" class = 'form-control' type="text" formControlName="releaseYear"placeholder = "Year the Movie was released..">
+          </div> <br/><br/>
+          <div class = 'form-group'>
+            <label for="duration">
+              Duration
+            </label>
+            <input id="duration" class = 'form-control' type="text" formControlName="duration"placeholder = "Movie duration in minutes">
+          </div> <br/><br/>
+          <div class = 'form-group'>
+            <label for="rating">
+              Genre
+            </label>
+            <input id="rating" class = "form-control" type="text" formControlName="genres" placeholder = " Movie genre">
+          </div> <br/><br/>
+          
+          <div class = 'form-group'>
+            <label for="rating">
+              Actor Name
+            </label>
+            <input id="rating" class = "form-control" type="text" formControlName="actor" placeholder = " Name of the Actor">
+          </div> <br/><br/>
+    </form>
+    
+    <button class = 'btn btn-success' (click) = "onUpdate()">Submit</button> 
+    </div>
+    
+    
