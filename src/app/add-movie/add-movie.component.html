@@ -1,0 +1,39 @@
+<div class="col-xs-12">
+<h2 style = "text-align: center;">Add Movie Form</h2>
+
+<form [formGroup]="checkoutForm">
+    <div class = 'form-group'>
+        <label for="title">
+          Movie Title
+        </label>
+        <input id="title" class = 'form-control' type="text" formControlName="title">
+      </div> <br/><br/>
+      <div class = 'form-group'>
+        <label for="movieDesc">
+          Movie Description
+        </label>
+        <input id="movieDesc" class = 'form-control' type="text" formControlName="movieDesc">
+      </div> <br/><br/>
+      <div class = 'form-group'>
+        <label for="releaseYear">
+          Release Year
+        </label>
+        <input id="releaseYear" class = 'form-control' type="text" formControlName="releaseYear">
+      </div> <br/><br/>
+      <div class = 'form-group'>
+        <label for="duration">
+          Duration
+        </label>
+        <input id="duration" class = 'form-control' type="text" formControlName="duration">
+      </div> <br/><br/>
+      <div class = 'form-group'>
+        <label for="rating">
+          Rating
+        </label>
+        <input id="rating" class = "form-control" type="text" formControlName="rating">
+      </div> <br/><br/>
+
+</form>
+</div>
+<button class = 'btn btn-success' (click) = "OnSubmit()">Submit</button> 
+

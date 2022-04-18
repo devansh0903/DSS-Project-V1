@@ -1,0 +1,27 @@
+<br/>
+<div *ngIf = "movie">
+  <h2>{{movie.title }}</h2>
+  <p>{{movie.actors}}</p>
+  <br/>
+  <button class = "btn btn-primary">Add Review</button><br/><br/>
+  <div class="table-responsive table-container table-striped">
+        <table class="table">
+          <thead>
+            <tr>
+                <th>Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor= "let rev of movie.reviews">
+                    <td>{{rev}}</td>
+                </tr>
+                </tbody>
+                </table>
+
+
+  
+
+  
+  
+
+
