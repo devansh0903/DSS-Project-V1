@@ -1,0 +1,23 @@
+<br/><br/>
+<div class = container-sm>
+<h1 style = "text-align: center;">Digital Streaming Services</h1>
+</div>
+<br/><br/>
+<div class = "container-sm">
+    <h2 style = "text-align: center;">Login</h2>
+    
+    <form [formGroup]="loginForm">
+        <div class = 'form-group'>
+            <label for="username">
+              Username
+            </label>
+            <input id="username" class = 'form-control' type="text" formControlName="username" placeholder = "Username or Email address">
+          </div> <br/><br/>
+          <div class = 'form-group'>
+            <label for="movieDesc">
+              Password
+            </label>
+            <input id="password" class = 'form-control' type="password" formControlName="password"placeholder = "Type your password here">
+          </div> <br/><br/>
+
+          <button class = "btn btn-success" (click) = "onLogin()">Login</button>

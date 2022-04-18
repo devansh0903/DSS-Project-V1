@@ -37,7 +37,7 @@ export class EditMovieComponent implements OnInit {
     console.log('Updating record.');
     this.movieService.updateMovie(this.updateMovieForm.value).subscribe((data:any) => {
         alert("record updated");
-        this.route.navigate(['']);
+        this.route.navigate(['list-movie']);
       },
       error => {
         alert(error);

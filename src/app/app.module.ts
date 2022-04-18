@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ReviewComponent } from './review/review.component';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {FormsModule} from '@angular/forms';
     AddMovieComponent,
     MovieDetailsComponent,
     NavbarComponent,
-    ReviewComponent
+    ReviewComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

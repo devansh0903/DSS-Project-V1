@@ -32,7 +32,7 @@ export class AddMovieComponent implements OnInit {
       console.log(this.addMovieForm?.value);
       this.movieService.createMovie(this.addMovieForm?.value).subscribe(data => {
         console.log("Data sent to the web api.");
-        this.route.navigate(['']);
+        this.route.navigate(['list-movie']);
       });
     }
   }
